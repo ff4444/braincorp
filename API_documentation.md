@@ -1,0 +1,37 @@
+# Robot API Documentation
+
+Welcome to the documentation for My Awesome API. This API allows you to interact with various resources and perform CRUD operations.
+
+## Authentication
+
+All endpoints require authentication using API keys. You can obtain your API key by signing up on our customer solution team.
+
+## Base URL
+
+The base URL for all API endpoints is `https://api.braincorp.com`.
+
+## Endpoints
+
+### 1. Create New Event List
+
+Post a list of events that have occured recently. Events are time stamped so that chronology is preserved even when internet connectivity may be compromised.
+
+#### Request
+
+- **URL:** `/events`
+- **Method:** `POST`
+- **Authentication:** Required (API key)
+
+#### Response
+
+- **Status Code:** 200 OK
+- **Body:**
+
+```json
+[
+    {
+        "name": "EventsReceived",
+        "count": "49"
+    }
+]
+```
