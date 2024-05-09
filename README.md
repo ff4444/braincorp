@@ -3,13 +3,17 @@ Examples for Brain Corp demonstrating:
 
 - Git and GitHub experience
 - Jenkins for CI/CD to go from git to live cloud deployment
-  -- Google Cloud Build could be used instead
+  - Google Cloud Build could be used instead
 - API design
 - Security and encryption
 - Google Cloud Anthos for Jenkins and build/test containers
 - Google Kubernetes Engine to configure containers
 - Google Cloud Functions in Python (Robot event reporting API)
-- Google App Engine design (Go batch processing of queue of events into BigQuery or GCS)
+- Google App Engine design (Go batch processing of queue of events using Dataproc API)
+  - Could use Spark also for data processing
+  - Could use Google Cloud AI for data inference and summarization
+- Google Big Query
+  - Could use Google Cloud Storage and Snowflake instead
 
 ```mermaid
 sequenceDiagram
