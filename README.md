@@ -6,6 +6,7 @@ Examples for Brain Corp demonstrating:
   - Google Cloud Build could be used instead
 - API design
   - Could manage this in Apigee API Management
+  - Swagger is a useful tool as well
 - Security and encryption
 - Google Cloud Anthos for Jenkins and build/test containers
 - Google Kubernetes Engine to configure containers
