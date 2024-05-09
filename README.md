@@ -17,13 +17,18 @@ sequenceDiagram
     participant GKE
     participant Jenkins
     participant BuildTestContainer
-    participant Google Cloud Function
+    participant Google Cloud Functions
     participant Google App Engine
+    participant Google Dataproc
     participant BigQuery
     GitHub->>GKE: Container definitions
     GKE->>Jenkins: Instantiate
     GKE->>BuildTestContainer: Instantiate
     Jenkins->>GitHub: Poll
-    Jenkins->>BuildTestContainer: Build Python and Go
+    Jenkins->>BuildTestContainer: Build Python and Go code
     BuildTestContainer->>Jenkins: Test results
+    Jenkins->>Google Cloud Functions: Deploy Python API endpoints
+    Jenkins->>Google App Engine: Deploy Go robot batch processing app
+    Google App Engine->>Google Dataproc: Clean / process
+    Google Dataproc->>BigQuery: Robot data storage
 ```
