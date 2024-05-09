@@ -5,6 +5,7 @@ Examples for Brain Corp demonstrating:
 - Jenkins for CI/CD to go from git to live cloud deployment
   - Google Cloud Build could be used instead
 - API design
+  - Could manage this in Apigee API Management
 - Security and encryption
 - Google Cloud Anthos for Jenkins and build/test containers
 - Google Kubernetes Engine to configure containers
