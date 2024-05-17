@@ -1,6 +1,6 @@
 # Robot API Documentation
 
-Welcome to the documentation for My Awesome API. This API allows you to interact with various resources and perform CRUD operations.
+Welcome to the documentation for Awesome Robot API. This API allows you to interact with various resources and perform CRUD operations.
 
 ## Authentication
 
@@ -42,7 +42,7 @@ Post a list of events that have occured recently. Events are time stamped so tha
    }
    "eventsArray" : [
        "event" : {
-           "event name" : "event1029: Left drive moter over-current warning",
+           "event name" : "event1029: Left drive motor over-current warning",
            "epoch time" : 1715286332
            }
    ]
